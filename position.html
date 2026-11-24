@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <link rel="stylesheet" href="position.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>CSS Position</h1>
+        <p>This page shows the main position values in CSS.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Code goes here -->
+      <section>
+        <h2>Static</h2>
+        <p>
+          Static is the default position. Elements stay in the normal page flow.
+        </p>
+
+        <div class="position-box">
+          <div class="demo static-demo">Static</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Relative</h2>
+        <p>
+          Relative keeps the element in the normal flow like static, but lets us
+          move it with top, right, bottom and left.
+        </p>
+
+        <div class="position-box">
+          <div class="demo relative-demo">relative</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Absolute</h2>
+        <p>
+          Absolute moves an element relative to its nearest relative positioned
+          parent.
+        </p>
+        <p>
+          Absolute removes the element from the page flow. Be careful
+          overlapping other elements!
+        </p>
+
+        <div class="position-box absolute-parent">
+          <div class="demo absolute-demo">Absolute</div>
+          <div class="demo z-index-demo">Demo</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Fixed</h2>
+        <p>Fixed stays in the same place even when the page scrolls.</p>
+
+        <div class="position-box">
+          <div class="demo-note">
+            Look at the bottom right corner of the page.
+          </div>
+        </div>
+        <div class="demo fixed-demo">Fixed</div>
+      </section>
+
+      <section>
+        <h2>Sticky</h2>
+        <p>
+          Sticky acts like relative until we reach a certain scroll position,
+          then it sticks and acts like fixed.
+        </p>
+
+        <div class="demo sticky-demo">Sticky</div>
+
+        <div class="tall-area"></div>
+      </section>
+    </main>
+  </body>
+</html>
