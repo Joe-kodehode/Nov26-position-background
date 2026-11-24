@@ -63,4 +63,72 @@ section p {
   text-align: center;
 }
 
-/* Code goes here */
+/* background-color */
+.bg-color-demo {
+  background-color: #2563eb;
+}
+
+/* background-image */
+.bg-image-demo {
+  background-image: url(images/forest-castle.jpg);
+}
+
+/* background-repeat */
+.bg-repeat-demo {
+  height: 800px;
+  background-image: url(images/snow-castle.jpg);
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+}
+
+/* Background-size */
+
+.bg-size-demo {
+  background-image: url(images/fog-castle.jpg);
+  /* background-size: 200px; */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+}
+
+/* Background-position */
+.bg-position-demo {
+  background-image: url(images/fog-castle.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background-position: top right */
+}
+
+/* background-attachment */
+.scroll-space {
+  height: 1000px;
+}
+
+.bg-attachment-demo {
+  background-image: url(images/reflection-castle.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* background shorthand */
+.bg-shorthand-demo {
+  /* background-color: black;
+  background-image: url(images/snow-castle.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; */
+
+  /* Order:  color image position / size repeat */
+  background: black url(images/snow-castle.jpg) center / cover no-repeat;
+
+  /* max-width: 640px; */
+}
+
+/* rastor images - fixed amount of pixels to work with */
+/* jpg, png */
+
+/* Vector images - infinitely scaleable, simple icons */
+/* svg - scaleable vector graphic */
